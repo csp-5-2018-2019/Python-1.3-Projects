@@ -1,0 +1,120 @@
+import random
+
+def Periodic_Table_Quiz():
+   Score = 0
+   Next_Question = True
+   Nonmetals = ["Hydrogen","Carbon","Nitrogen","Oxygen","Phosphorus", "Sulfur", "Selenium"]
+   Noble_Gases = ["Helium","Neon","Argon","Krypton","Xenon", "Radon", "Oganesson"]
+   Alkali_Metals = ["Lithium","Sodium","Potassium","Rubidium","Cesium", "Francium"]
+   Alkali_Earth_Metals = ["Beryllium","Magnesium","Strontium","Barium","Radium"]
+   Metalloids = ["Boron","Silicon","Germanium","Arsenic","Antimony", "Tellurium", "Polonium"]
+   Halogens = ["Fluorine","Chlorine","Bromine","Iodine","Astatine", "Tennessine"]
+   Ordinary_Metals = ["Aluminum","Gallium","Indium","Tin","Thallium", "Lead", "Bismuth", "Nihonium", "Flerovium", "Moscovium", "Livermorium"]
+   Transition_Metals_1 = ["Scandium", "Titanium", "Vanadium", "Chromium", "Manganese", "Iron", "Cobalt", "Nickel", "Copper", "Zinc", "Yttrium", "Zirconium", "Niobium"]
+   Transition_Metals_2 = ["Molybdenum", "Technetium", "Ruthenium", "Rhodium", "Palladium", "Silver", "Cadmium", "Hafnium", "Tantalum", "Tungsten", "Rhenium", "Osmium", "Iridium"]
+   Transition_Metals_3 = ["Platinum", "Gold", "Mercury", "Rutherfordium", "Dubnium", "Seaborgium", "Bohrium", "Hassium", "Meitnerium", "Darmstadtium", "Roentgenium", "Copernicium"]
+   Lanthanides = ["Lanthanum", "Cerium", "Praseodynium", "Neodymium", "Promethium", "Samarium", "Europium ", "Gadolinium", "Terbium", "Dysprosium", "Holmium", "Erbium", "Thulium", "Yttrbium", "Lutetium"]
+   Actinides = ["Actinium", "Thorium", "Protactinium","Uranium", "Neptunium", "Plutonium", "Americium", "Curium", "Berkelium", "Californium", "Einsteinium", "Fermium", "Mendelevium", "Nobelium", "Lawrencium"]
+   
+   while Next_Question == True:
+        Element_Category_Choice = random.randint(1, 10)
+        if Element_Category_Choice == 1:
+            Element_Guess = str(raw_input("Name an element that is a Non-metal: "))
+            if Element_Guess in Nonmetals:
+                Score = Score + 1
+                print("Correct! Your score is now " + str(Score) + ".")
+                Want_New_Question = raw_input("Would you like a new question?: ")
+                if Want_New_Question == ("Yes"):
+                    Next_Question == True
+                else:
+                    Next_Question == False
+        if Element_Category_Choice == 2:
+            Element_Guess = str(raw_input("Name an element that is a Noble Gas: "))
+            if Element_Guess in Noble_Gases:
+                Score = Score + 1
+                print("Correct! Your score is now " + str(Score) + ".")
+                Want_New_Question = raw_input("Would you like a new question?: ")
+                if Want_New_Question == ("Yes"):
+                    Next_Question == True
+                else:
+                    Next_Question == False
+        if Element_Category_Choice == 3:
+            Element_Guess = str(raw_input("Name an element that is a Alkali Metal: "))
+            if Element_Guess in Alkali_Metals:
+                Score = Score + 1
+                print("Correct! Your score is now " + str(Score) + ".")
+                Want_New_Question = raw_input("Would you like a new question?: ")
+                if Want_New_Question == ("Yes"):
+                    Next_Question == True
+                else:
+                    Next_Question == False
+        if Element_Category_Choice == 4:
+            Element_Guess = str(raw_input("Name an element that is a Alkali Earth Metal: "))
+            if Element_Guess in Alkali_Earth_Metals:
+                Score = Score + 1
+                print("Correct! Your score is now " + str(Score) + ".")
+                Want_New_Question = raw_input("Would you like a new question?: ")
+                if Want_New_Question == ("Yes"):
+                    Next_Question == True
+                else:
+                    Next_Question == False
+        if Element_Category_Choice == 5:
+            Element_Guess = str(raw_input("Name an element that is a Mealloid: "))
+            if Element_Guess in Metalloids:
+                Score = Score + 1
+                print("Correct! Your score is now " + str(Score) + ".")
+                Want_New_Question = raw_input("Would you like a new question?: ")
+                if Want_New_Question == ("Yes"):
+                    Next_Question == True
+                else:
+                    Next_Question == False
+        if Element_Category_Choice == 6:
+            Element_Guess = str(raw_input("Name an element that is a Halogen: "))
+            if Element_Guess in Halogens:
+                Score = Score + 1
+                print("Correct! Your score is now " + str(Score) + ".")
+                Want_New_Question = raw_input("Would you like a new question?: ")
+                if Want_New_Question == ("Yes"):
+                    Next_Question == True
+                else:
+                    Next_Question == False    
+        if Element_Category_Choice == 7:
+            Element_Guess = str(raw_input("Name an element that is a Ordinary Metal: "))
+            if Element_Guess in Ordinary_Metals:
+                Score = Score + 1
+                print("Correct! Your score is now " + str(Score) + ".")
+                Want_New_Question = raw_input("Would you like a new question?: ")
+                if Want_New_Question == ("Yes"):
+                    Next_Question == True
+                else:
+                    Next_Question == False    
+        if Element_Category_Choice == 8:
+            Element_Guess = str(raw_input("Name an element that is a Transition Metal: "))
+            if Element_Guess in Transition_Metals_1 or Transition_Metals_2 or Transition_Metals_3:
+                Score = Score + 1
+                print("Correct! Your score is now " + str(Score) + ".")
+                Want_New_Question = raw_input("Would you like a new question?: ")
+                if Want_New_Question == ("Yes"):
+                    Next_Question == True
+                else:
+                    Next_Question == False    
+        if Element_Category_Choice == 9:
+            Element_Guess = str(raw_input("Name an element that is a Lanthanide: "))
+            if Element_Guess in Lanthanides:
+                Score = Score + 1
+                print("Correct! Your score is now " + str(Score) + ".")
+                Want_New_Question = raw_input("Would you like a new question?: ")
+                if Want_New_Question == ("Yes"):
+                    Next_Question == True
+                else:
+                    Next_Question == False    
+        if Element_Category_Choice == 10:
+            Element_Guess = str(raw_input("Name an element that is a Actinide: "))
+            if Element_Guess in Actinides:
+                Score = Score + 1  
+                print("Correct! Your score is now " + str(Score) + ".")
+                Want_New_Question = raw_input("Would you like a new question?: ")
+                if Want_New_Question == ("Yes"):
+                    Next_Question == True 
+                else:
+                    Next_Question == False      
