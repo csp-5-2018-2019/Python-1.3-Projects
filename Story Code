@@ -1,0 +1,24 @@
+def Start_game():
+    print ('One day, whlie you were exporing the jungle,')
+    print ('you stumbe upon a dungeon and decide to go in.')
+    print ('At the entrance, you see two paths')
+    print ('One path leads you closer to the exit,')
+    print ('the other path leads you to a room with a button.')
+    print ('Which one will you choose?')
+    chosen_path = str(raw_input('Pick a path:'))
+    if chosen_path == "path1":
+        print ('You go down the path that takes you closer to the exit')
+        print ('Then you notice another two paths, one takes you out of the dungeon')
+        print ('the other one leads to a dead end.')
+        chosen_path = str(raw_input('Pick a path:'))
+        if chosen_path == "path3":
+            print ('Great!, you made it out of the dungeon and find a chest with the tresure inside.')
+            print ('You take the treasure and buy a mansion.')
+        if chosen_path == "path4":
+            print ('You choose the path that leads to the dead end')
+            print ('Once inside, a wall comes down at the entrance trapping you inside until you starve to death')
+    if chosen_path == "path2":
+        print ('You go down the path that goes to the room with the button.')
+        print ('You look around to see if there is a way out without pressing the button.')
+        print ('You find no other way out, so you press the button.')
+        print ('Suddenly, the floor opens underneath you and you fall to your death.')
